@@ -144,12 +144,6 @@ function showWeather(weather) {
     setText("official_name", weather.official_name);
     setText("capital", weather.capital);
     setText("continent", weather.continent);
-
-    setText(
-        "population",
-        weather.population ? Number(weather.population).toLocaleString() : "-"
-    );
-
     setText("area", weather.area ? `${weather.area} km²` : "-");
     setText("currency", weather.currency);
     setText("language", weather.language);

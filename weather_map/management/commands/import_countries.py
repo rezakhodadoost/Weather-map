@@ -38,7 +38,6 @@ class Command(BaseCommand):
                     "iso3": country.get("cca3", ""),
                     "capital": capital,
                     "continent": country.get("region", ""),
-                    "population": country.get("population", 0),
                     "area": country.get("area", 0),
                     "currency": currency,
                     "language": languages,

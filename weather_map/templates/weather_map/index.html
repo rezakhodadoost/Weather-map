@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather Globe</title>
-        <link rel="stylesheet" href="/static/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Globe</title>
 
-    <body>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
 
-        <div id="globeViz"></div>
+<body>
 
-        <div id="info-panel">
+    <div id="globeViz"></div>
 
-            <div class="header">
-                <div id="flag">🌍</div>
+    <div id="info-panel">
+
+        <div class="header">
+            <div id="flag">🌍</div>
 
             <div>
                 <h1 id="country">Weather Globe</h1>
@@ -25,77 +26,89 @@
 
         <hr>
 
-            <h3>Country Information</h3>
+        <h3>Country Information</h3>
 
-            <div class="grid">
-
-                <div class="card">
-                    Capital
-                    <b id="capital">--</b>
-                </div>
+        <div class="grid">
 
             <div class="card">
-                Continent
+                <span>Capital</span>
+                <b id="capital">--</b>
+            </div>
+
+            <div class="card">
+                <span>Continent</span>
                 <b id="continent">--</b>
             </div>
 
             <div class="card">
-                Area
+                <span>Area</span>
                 <b id="area">--</b>
+            </div>
+
+            <div class="card">
+                <span>Language</span>
+                <b id="language">--</b>
+            </div>
+
+            <div class="card">
+                <span>Latitude</span>
+                <b id="latitude">--</b>
+            </div>
+
+            <div class="card">
+                <span>Longitude</span>
+                <b id="longitude">--</b>
+            </div>
+
+            <div class="card currency-card">
+                <span>Currency</span>
+                <b id="currency">--</b>
             </div>
 
         </div>
 
         <hr>
 
-            <h3>weather</h3>
+        <h3>Weather</h3>
 
-            <div class="temperature">
-                <span id="temperature">--</span>
-            </div>
-
-            <p>
-            
-                Feeling:
-                <b id="feels_like">--</b>
-            </p>
-
-            <p>
-                Humidity:
-                <b id="humidity">--</b>
-            </p>
-
-            <p>
-                Wind speed:
-                <b id="wind_speed">--</b>
-            </p>
-
-            <p>
-                Pressure:
-                <b id="pressure">--</b>
-            </p>
-
-            <p>
-                Status:
-                <b id="description">--</b>
-            </p>
-
-            <div class="hidden">
-
-                <span id="official_name"></span>
-                <span id="currency"></span>
-                <span id="language"></span>
-                <span id="latitude"></span>
-                <span id="longitude"></span>
-
-            </div>
-
+        <div class="temperature">
+            <span id="temperature">--</span>
         </div>
 
-    
+        <p>
+            Feeling:
+            <b id="feels_like">--</b>
+        </p>
+
+        <p>
+            Humidity:
+            <b id="humidity">--</b>
+        </p>
+
+        <p>
+            Wind Speed:
+            <b id="wind_speed">--</b>
+        </p>
+
+        <p>
+            Pressure:
+            <b id="pressure">--</b>
+        </p>
+
+        <p>
+            Status:
+            <b id="description">--</b>
+        </p>
+
+        <div class="hidden">
+            <span id="official_name"></span>
+        </div>
+
+    </div>
+
     <script src="https://unpkg.com/globe.gl@2.32.0/dist/globe.gl.min.js"></script>
     <script src="/static/js/app.js"></script>
 
-    </body>
+</body>
 
 </html>

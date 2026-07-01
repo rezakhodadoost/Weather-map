@@ -79,8 +79,6 @@ class CountryWeatherView(APIView):
 
             "continent": country.continent,
 
-            "population": country.population,
-
             "area": country.area,
 
             "currency": country.currency,
