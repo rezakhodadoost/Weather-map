@@ -44,6 +44,11 @@ Clone the repository:
 git clone https://github.com/your-username/3d-weather-globe.git
 cd 3d-weather-globe
 ```
+## Run the Development Server
+
+```bash
+python manage.py runserver
+```
 
 Create a virtual environment:
 
