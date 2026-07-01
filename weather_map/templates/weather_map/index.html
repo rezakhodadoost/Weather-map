@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Globe</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+
+    <body>
+
+        <div id="globeViz"></div>
+
+        <div id="info-panel">
+
+            <div class="header">
+                <div id="flag">🌍</div>
+
+            <div>
+                <h1 id="country">Weather Globe</h1>
+                <span>Live Weather</span>
+            </div>
+        </div>
+
+        <hr>
+
+            <h3>Country Information</h3>
+
+            <div class="grid">
+
+                <div class="card">
+                    Capital
+                    <b id="capital">--</b>
+                </div>
+
+            <div class="card">
+                Continent
+                <b id="continent">--</b>
+            </div>
+
+            <div class="card">
+                Area
+                <b id="area">--</b>
+            </div>
+
+        </div>
+
+        <hr>
+
+            <h3>weather</h3>
+
+            <div class="temperature">
+                <span id="temperature">--</span>
+            </div>
+
+            <p>
+            
+                Feeling:
+                <b id="feels_like">--</b>
+            </p>
+
+            <p>
+                Humidity:
+                <b id="humidity">--</b>
+            </p>
+
+            <p>
+                Wind speed:
+                <b id="wind_speed">--</b>
+            </p>
+
+            <p>
+                Pressure:
+                <b id="pressure">--</b>
+            </p>
+
+            <p>
+                Status:
+                <b id="description">--</b>
+            </p>
+
+            <div class="hidden">
+
+                <span id="official_name"></span>
+                <span id="currency"></span>
+                <span id="language"></span>
+                <span id="latitude"></span>
+                <span id="longitude"></span>
+
+            </div>
+
+        </div>
+
+    
+    <script src="https://unpkg.com/globe.gl@2.32.0/dist/globe.gl.min.js"></script>
+    <script src="/static/js/app.js"></script>
+
+    </body>
+
+</html>
